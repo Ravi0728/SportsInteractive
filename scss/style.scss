@@ -1,0 +1,500 @@
+$text-color: #ffffff;
+$body-color: #111b58;
+
+body {
+  background-color: $body-color;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+
+  .container {
+    .header {
+      color: $text-color;
+      width: 100%;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      position: relative;
+      top: 20px;
+
+      span {
+        img {
+          margin-left: 25px;
+        }
+      }
+      #team_title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        @media screen and (max-width: 767px) {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+    .top-nav {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      color: $text-color;
+      margin-top: 32px;
+      .budget {
+        margin-left: 25px;
+      }
+      .team_function {
+        img {
+          border: 1px solid #b4033a;
+          border-radius: 6px;
+          background: rgba(180, 3, 58, 0.2);
+          margin: 0 30px 12px 0;
+          padding: 10px;
+        }
+        .submit-button {
+          border: 1px solid #b4033a;
+          border-radius: 6px;
+          background: rgba(180, 3, 58, 0.2);
+          margin-right: 30px;
+          color: $text-color;
+          padding: 10px;
+          position: relative;
+          bottom: 12px;
+          width: 130px;
+        }
+        @media screen and (max-width: 767px) {
+          display: flex;
+          flex-direction: row;
+          
+        }
+      }
+    }
+    .create_team {
+      display: flex;
+      color: #ffffff;
+      width: 500px;
+      margin: 0 auto;
+      background-color: #041332;
+      height: 40px;
+      align-items: center;
+
+      .price {
+        width: 150px;
+        padding: 6px;
+        background: #b4033ab2;
+        text-align: center;
+        border-radius: 6px;
+      }
+      .fixtures {
+        width: 150px;
+        text-align: center;
+      }
+      .date {
+        width: 150px;
+        text-align: center;
+      }
+    }
+
+    .stadium-body {
+      width: 500px;
+      height: auto;
+      margin: 30px auto;
+
+      .stadium-top {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+
+        img {
+          margin-top: 10px;
+          background-color: $text-color;
+        }
+      }
+
+      .stadium {
+        position: relative;
+        #stadium_img {
+          width: 500px;
+          height: auto;
+        }
+
+        .field-player1 {
+          position: absolute;
+          top: 30px;
+          left: 28%;
+          .player1_name {
+            width: 60px;
+            background: #111948;
+            border: 0.925266px solid rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            color: $text-color;
+            padding: 2px 10px;
+            font-size: 10px;
+            font-family: "Open Sans";
+            text-align: center;
+          }
+          .player1_price {
+            background: #590320;
+            border-radius: 2px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: $text-color;
+            font-size: 10px;
+            font-family: "Open Sans";
+            text-align: center;
+            width: 65px;
+            margin: 0 auto;
+          }
+        }
+        .field-player2 {
+          position: absolute;
+          top: 30px;
+          right: 28%;
+          .player2_name {
+            width: 60px;
+            background: #111948;
+            border: 0.925266px solid rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            color: $text-color;
+            padding: 2px 10px;
+            font-size: 10px;
+            font-family: "Open Sans";
+            text-align: center;
+          }
+          .player2_price {
+            background: #590320;
+            border-radius: 2px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: $text-color;
+            font-size: 10px;
+            font-family: "Open Sans";
+            text-align: center;
+            width: 65px;
+            margin: 0 auto;
+          }
+        }
+        .sports-stadium-middle-player {
+          display: flex;
+          .field-player3 {
+            position: absolute;
+            top: 29%;
+            left: 8%;
+            .player3_name {
+              width: 60px;
+              background: #111948;
+              border: 0.925266px solid rgba(255, 255, 255, 0.1);
+              border-radius: 2px;
+              color: $text-color;
+              padding: 2px 10px;
+              font-size: 10px;
+              font-family: "Open Sans";
+              text-align: center;
+            }
+            .player3_price {
+              background: #590320;
+              border-radius: 2px;
+              border: 1px solid rgba(255, 255, 255, 0.1);
+              color: $text-color;
+              font-size: 10px;
+              font-family: "Open Sans";
+              text-align: center;
+              width: 65px;
+              margin: 0 auto;
+            }
+          }
+
+          .field-player4 {
+            position: absolute;
+            top: 29%;
+            left: 28%;
+            .player4_name {
+              width: 60px;
+              background: #111948;
+              border: 0.925266px solid rgba(255, 255, 255, 0.1);
+              border-radius: 2px;
+              color: $text-color;
+              padding: 2px 10px;
+              font-size: 10px;
+              font-family: "Open Sans";
+              text-align: center;
+            }
+            .player4_price {
+              background: #590320;
+              border-radius: 2px;
+              border: 1px solid rgba(255, 255, 255, 0.1);
+              color: $text-color;
+              font-size: 10px;
+              font-family: "Open Sans";
+              text-align: center;
+              width: 65px;
+              margin: 0 auto;
+            }
+          }
+
+          .field-player5 {
+            position: absolute;
+            top: 27%;
+            right: 33%;
+            .player5_name {
+              width: 55px;
+              background: #111948;
+              border: 0.925266px solid rgba(255, 255, 255, 0.1);
+              border-radius: 2px;
+              color: $text-color;
+              padding: 2px 10px;
+              font-size: 10px;
+              font-family: "Open Sans";
+              text-align: center;
+            }
+          }
+          .field-player6 {
+            position: absolute;
+            top: 27%;
+            right: 11%;
+            .player6_name {
+              width: 55px;
+              background: #111948;
+              border: 0.925266px solid rgba(255, 255, 255, 0.1);
+              border-radius: 2px;
+              color: $text-color;
+              padding: 2px 10px;
+              font-size: 10px;
+              font-family: "Open Sans";
+              text-align: center;
+            }
+          }
+        }
+        .third-row-players {
+          display: flex;
+          .field-player7 {
+            position: absolute;
+            bottom: 30%;
+            left: 12%;
+            .player5_name {
+              width: 55px;
+              background: #111948;
+              border: 0.925266px solid rgba(255, 255, 255, 0.1);
+              border-radius: 2px;
+              color: $text-color;
+              padding: 2px 10px;
+              font-size: 10px;
+              font-family: "Open Sans";
+              text-align: center;
+            }
+          }
+          .field-player8 {
+            position: absolute;
+            bottom: 30%;
+            left: 32%;
+            .player5_name {
+              width: 55px;
+              background: #111948;
+              border: 0.925266px solid rgba(255, 255, 255, 0.1);
+              border-radius: 2px;
+              color: $text-color;
+              padding: 2px 10px;
+              font-size: 10px;
+              font-family: "Open Sans";
+              text-align: center;
+            }
+          }
+          .field-player9 {
+            position: absolute;
+            bottom: 30%;
+            right: 33%;
+            .player5_name {
+              width: 55px;
+              background: #111948;
+              border: 0.925266px solid rgba(255, 255, 255, 0.1);
+              border-radius: 2px;
+              color: $text-color;
+              padding: 2px 10px;
+              font-size: 10px;
+              font-family: "Open Sans";
+              text-align: center;
+            }
+          }
+          .field-player10 {
+            position: absolute;
+            bottom: 30%;
+            right: 13%;
+
+            .player5_name {
+              width: 55px;
+              background: #111948;
+              border: 0.925266px solid rgba(255, 255, 255, 0.1);
+              border-radius: 2px;
+              color: $text-color;
+              padding: 2px 10px;
+              font-size: 10px;
+              font-family: "Open Sans";
+              text-align: center;
+            }
+          }
+        }
+        .field-player11 {
+          position: absolute;
+          bottom: 11%;
+          left: 43%;
+          .player5_name {
+            width: 55px;
+            background: #111948;
+            border: 0.925266px solid rgba(255, 255, 255, 0.1);
+            border-radius: 2px;
+            color: $text-color;
+            padding: 2px 10px;
+            font-size: 10px;
+            font-family: "Open Sans";
+            text-align: center;
+          }
+        }
+      }
+
+      .add-player-team {
+        display: flex;
+        flex-direction: row;
+        width: 500px;
+        justify-content: space-around;
+        margin: 20px auto;
+        .add-player-1 {
+          width: 116px;
+          height: auto;
+          background: #000000;
+          opacity: 0.4;
+          border-radius: 10px;
+          color: $text-color;
+          img {
+            display: block;
+            margin: auto;
+          }
+          .add-player {
+            font-size: 12px;
+            text-align: center;
+            background-color: #111948;
+            width: fit-content;
+            margin: 0 auto;
+            padding: 2px 15px;
+            border-radius: 8px;
+            color: #ffd037;
+            font-family: "Open Sans";
+          }
+          .player-team {
+            font-size: 12px;
+            text-align: center;
+            margin-top: 15px;
+          }
+        }
+        .add-player-group_right {
+          display: flex;
+          border-radius: 20px;
+          .add-player-2 {
+            width: 116px;
+            height: auto;
+            background: #000000;
+            opacity: 0.4;
+            color: $text-color;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            color: $text-color;
+            img {
+              display: block;
+              margin: auto;
+            }
+            .add-player {
+              font-size: 12px;
+              text-align: center;
+              background-color: #111948;
+              width: fit-content;
+              margin: 0 auto;
+              padding: 2px 15px;
+              border-radius: 8px;
+              color: #ffd037;
+              font-family: "Open Sans";
+            }
+            .player-team {
+              font-size: 12px;
+              text-align: center;
+              margin-top: 15px;
+            }
+          }
+          .add-player-3 {
+            width: 116px;
+            height: auto;
+            background: #000000;
+            opacity: 0.4;
+            color: $text-color;
+            img {
+              display: block;
+              margin: auto;
+            }
+            .add-player {
+              font-size: 12px;
+              text-align: center;
+              background-color: #111948;
+              width: fit-content;
+              margin: 0 auto;
+              padding: 2px 15px;
+              border-radius: 8px;
+              color: #ffd037;
+              font-family: "Open Sans";
+            }
+            .player-team {
+              font-size: 12px;
+              text-align: center;
+              margin-top: 15px;
+            }
+          }
+          .add-player-4 {
+            width: 116px;
+            height: auto;
+            background: #000000;
+            opacity: 0.4;
+            color: $text-color;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            img {
+              display: block;
+              margin: auto;
+            }
+            .add-player {
+              font-size: 12px;
+              text-align: center;
+              background-color: #111948;
+              width: fit-content;
+              margin: 0 auto;
+              padding: 2px 15px;
+              border-radius: 8px;
+              color: #ffd037;
+              font-family: "Open Sans";
+            }
+            .player-team {
+              font-size: 12px;
+              text-align: center;
+              margin-top: 15px;
+            }
+          }
+        }
+      }
+
+      .submit_team {
+        display: flex;
+        justify-content: center;
+        button {
+          width: auto;
+          padding: 10px 50px;
+          border-radius: 6px;
+          border: none;
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 22px;
+          background: #ffd037;
+          color: #111948;
+        }
+      }
+    }
+  }
+}
